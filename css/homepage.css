@@ -177,9 +177,15 @@
   margin-left: 15px;
   /* margin-top: 210px; */
 }
+/* <!----------------carousel --------------------------------------------> */
 
 #carousel{
   margin: 60px 20px 20px 20px;
+
+}
+
+#carousel >img{
+  width: 100%;
 }
 
 /* <!----------------browse by brands --------------------------------------------> */
@@ -188,25 +194,187 @@
 
 .brand >h4{
   margin-left: 200px;
+  margin-top: 20px;
   font-weight: bold;
   color: #777777;
 }
 
 .brands{
   width: 1100px;
-  margin-left: 250px;
+  margin-left: 230px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 25px;
   
 }
 
 .brand-logo{
     width: 100px;
     border-radius: 50%;
+    /* transition: transform .2s; */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .brands >img:hover{
+  /* width: 120px; */
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+/* <!----------------- BEST CAR SPARE PARTS ONLINE STORE IN INDIA --------------------------------------------> */
+
+
+#cards{
+  width: 1000px;
+  margin-top: 20px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-gap: 5px; */
+}
+
+.cards{
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+/* <!----------------- product list --------------------------------------------> */
+.prod_title{
+  
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #777777;
+
+}
+
+.prod_title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#product-list{
+
+  width: 100%;
+  margin: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  
+}
+
+.prod_div{
+  text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  padding: 10px;
+}
+
+.prod_div:hover .add-cart-btn{
+  background-color: #0088cc;
+  color: white;
+}
+
+.product-img{
+  width: 60%;
+}
+
+.product-img:hover{
+  cursor: pointer;
+}
+
+.add-cart-btn{
+  border: 1px solid rgb(212, 212, 212);
+  padding: 5px;
+  border-radius: 5px;
+  color: #535252;
+  background-color: white;
+}
+
+.price{
+  font-size: 22px;
+  color: #535252;
+}
+
+/* <!----------------- testimonials --------------------------------------------> */
+
+.testimonials{
+      display: flex;
+      margin: 20px 20px 20px 50px ;
+      background-color: #f0f0ed;
+      padding: 30px 50px;
+
+}
+
+.testimonials >img{
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.testimonials >div{
+  margin-right: 40px;
+  font-size: 14px;
+  color: #777777;
+}
+
+
+/* <!----------------- footer --------------------------------------------> */
+
+#footer{
+  margin-top: 200px;
+  background-color: #121214;
+  color: white;
+  font-size: 14px;
+  padding: 40px 220px;
+  display: flex;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+#float{
+  position: absolute;
+  z-index: 2; /* put .green-box above .dashed-box */
+  background-color: #0088cc;
   width: 120px;
+  left: 14%;
+  top: -25px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+
+#footer >div{
+  margin-right: 100px;
+}
+.footerLink{
+  text-decoration: unset;
+  color: rgb(228, 224, 224);
+}
+
+.footerLink:hover{
+  color: rgb(228, 224, 224);
+  text-decoration: underline;
+}
+
+#footer2{
+  background-color: #0c0c0c;
+  text-align: center;
+  color: #777777;
+  font-size: 13px;
+  padding: 20px;
 }
