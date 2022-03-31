@@ -61,7 +61,7 @@ const footer = () => {
     </div>
   </div>
 
-  <div id="float">Spareshub</div>
+  <div id="float" style="color:white">Spareshub</div>
 </div>
 `
 }
