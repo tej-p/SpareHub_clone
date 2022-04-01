@@ -5,6 +5,8 @@ const connect = require('./confiq/db')
 const app = express();
 const path = require('path')
 
+
+const port = process.env.PORT || 8888
 //const passport = require("./confiq/google-oauth");
 
 app.use('/', express.static(path.join(__dirname, 'static')))
@@ -18,7 +20,7 @@ app.use("", userController)
 
 
 
-app.listen(8888, '0.0.0.0', async () => {
+app.listen(port, '0.0.0.0', async () => {
     await connect();
-    console.log("listen on port 8888")
+    console.log(`listen on port ${port}`)
 })
