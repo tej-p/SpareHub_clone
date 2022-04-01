@@ -15,27 +15,10 @@ const userController = require('./controllers/usercontroller')
 //const cataController = require('./controllers/category.controller')
 
 app.use("", userController)
-//app.use("/products", productController)
-//app.use("/category", cataController)
 
 
 
-// passport.serializeUser(function (user, done) {
-//     done(null, user);
-// });
-
-// passport.deserializeUser(function (user, done) {
-//     done(null, user);
-// });
-
-// app.get(
-//     "/auth/google",
-//     passport.authenticate("google", { scope: ["email", "profile"] })
-// );
-
-
-
-app.listen(process.env.PORT || 8888, '0.0.0.0', async () => {
+app.listen(8888, '0.0.0.0', async () => {
     await connect();
     console.log("listen on port 8888")
 })

@@ -94,6 +94,10 @@
   position: relative;
 }
 
+#cartBack:hover{
+  cursor: pointer;
+}
+
 .cartIcon{
     width: 100%;
     height: 100%;

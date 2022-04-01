@@ -1,6 +1,5 @@
-const header = () => {
-    return `
-     <!-------------------------------------  header-1  ------------------------------------------->
+----------------------------------------------------------------header----------------------------------------------------------
+<!-------------------------------------  header-1  ------------------------------------------->
  
      <div id="header1">
        <span>WELCOME AT SPARESHUB.COM !</span>|<a href=""> CONTACT US </a> |
@@ -257,8 +256,327 @@ const header = () => {
        <p>SSL CERTIFIED TRANSACTION</p>
        <img src="../images/ONtime.webp" alt="" />
        <p>ON-TIME DELIVERY</p>
-     </div>`
-}
+     </div>
 
 
-export default header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------footer------------------------------------------------------------------------------------
+
+<div>
+    <a class="footerLink" href="">About Us</a><br />
+    <a class="footerLink" href="">Cantact Us!</a>
+    <p>
+      <a class="footerLink" href="">Call us - </a
+      ><i class="fas fa-phone-alt"></i> 919307901479
+    </p>
+    <p>
+      <a class="footerLink" href="">Whatsapp us - </a
+      ><i class="fab fa-whatsapp"></i> 9307901458
+    </p>
+    <p>
+      <a class="footerLink" href="">Email us -</a>
+      <i class="fas fa-envelope"></i> care@spareshub.com
+    </p>
+  </div>
+  <div>
+    <a class="footerLink" href="">Franchise</a><br />
+    <a class="footerLink" href="">Feedback</a><br />
+    <a class="footerLink" href="">Disclaimer</a><br />
+    <a class="footerLink" href="">Legal</a><br />
+    <a class="footerLink" href="">Privacy Policy</a>
+  </div>
+  <div>
+    <a class="footerLink" href="">Shipping Polich</a><br />
+    <a class="footerLink" href="">Refund Policy</a><br />
+    <a class="footerLink" href="">Terms Conditions</a><br />
+    <a class="footerLink" href="">Connect With Us</a>
+  </div>
+  <div>
+    <p style="font-size: 18px">Be the First to Know</p>
+    <p style="color: #777777">
+      Get all the latest information on Events,<br />
+      Sales and Offers. Sign up for newsletter<br />
+      today.
+    </p>
+
+    <p style="color: #777777">Enter your email address</p>
+    <div style="background-color: white; border-radius: 5px">
+      <input
+        type="text"
+        style="
+          border: none;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        "
+      />
+      <button
+        style="
+          border: none;
+          background-color: #2399d6;
+          color: white;
+          width: 90px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        "
+      >
+        Subscribe
+      </button>
+    </div>
+  </div>
+
+  <div id="float" style="color:white">Spareshub</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------footer2---------------------------------------------------------
+
+<p>
+    © 2017 Catalyst Retail Pvt. Ltd. All Rights Reserved. The website
+    www.spareshub.com is owned and operated by Catalyst Retail Pvt. Ltd.
+    Your use of this website signifies your <br />
+    agreement to the terms of use of this website. All brand and product
+    names and associated logos contained within this website belong to their
+    respective owners and are protected by <br />
+    copyright. Names and Images above are for representational purpose only
+    to serve as a guide to the user of the website and SparesHub.com is in
+    no way associated with any of the <br />
+    above mentioned automobile manufacturers.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------ checkout popup -------------------------------------
+
+    <div class="popupMain" id="removePopup">
+       <div class="popup">
+          <div id="coQty_total">
+              <p>Cart Subtotal: <i style='font-size:18px' class='fas'>&#xf156; </i> <span id="totalAmt"></span></p>
+              <p><span id="cartQty"></span> items in bag</p>
+              <p id="crosS">
+                  <i style="font-size:24px" class="fa">&#xf00d;</i>
+              </p>
+              
+          </div>
+          
+          <button id="coButton"> GO TO CHECKOUT</button>
+        
+
+          <div id="itemDetail">
+
+              <div class="content">
+              <img id="coImg" src="" alt="">
+              
+              <div style="flex: 8;padding-left: 10px;">
+                  <div id="coDetail">
+                  <p id="coTitle">title</p>
+                  <div style="display: flex;">
+                      <p id="coPrice">$90</p>
+                      <p id="coPriceDiscounted">$50</p>
+                  </div>
+                  </div>
+                  <div style="display: flex;">
+                  <p class="coSizeQty">Size</p>
+                  <p class="coSizeQty">S</p>
+                  </div>
+                  <div style="display: flex;">
+                  <p class="coSizeQty">Qty</p>
+                  <p class="coSizeQty">1</p>
+                  </div>
+              </div>
+              </div>
+        </div>
+      
+        <button id="cartBtn"> VIEW AND EDIT CART</button>
+      
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//<--------------function for product details display-------------- 
+
+//  <div class="content">
+//             <img id="coImg" src="" alt="">
+            
+//             <div style="flex: 8;padding-left: 10px;">
+//                 <div id="coDetail">
+//                 <p id="coTitle">title</p>
+//                 <div style="display: flex;">
+//                     <p id="coPrice">$90</p>
+//                     <p id="coPriceDiscounted">$50</p>
+//                 </div>
+//                 </div>
+//                 <div style="display: flex;">
+//                 <p class="coSizeQty">Size</p>
+//                 <p class="coSizeQty">S</p>
+//                 </div>
+//                 <div style="display: flex;">
+//                 <p class="coSizeQty">Qty</p>
+//                 <p class="coSizeQty">1</p>
+//                 </div>
+//             </div>
+//             </div> 
+
+
+------------------------------ popup function----------------------------
+
+// const myFunction = () => {
+
+//   // cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
+
+//   document.getElementById('removePopup').style.display = 'flex';
+
+
+//     cartArray.map = (elem)=>{
+       
+
+//         var div = document.getElementById("itemDetail")
+
+
+//         var div1 = document.createElement("div")
+//         div1.setAttribute("class", "content")
+
+//         var img = document.createElement("img")
+//         img.setAttribute("class", "coImg")
+//         img.src = elem.img
+
+//         var div2 = document.createElement("div")
+
+//         var title = document.createElement("p")
+//         title.setAttribute("class", "coTitle");
+//         title.textContent = elem.title
+
+//         var price = document.createElement("p")
+//         price.setAttribute("class", "coPrice");
+//         price.innerHTML = "<i style= 'font-size: 28px' class='fas'>&#xf156;</i>"+elem.price;
+
+//         var div3 = document.createElement("div")
+//         div3.style = "display: flex; justify-content:space-between"
+
+//         var pencil = document.createElement("p")
+//         penci.innerHTML = '<i style="font-size:24px" class="fa">&#xf040;</i>'
+
+//         var cross = document.createElement("p")
+//         cross.innerHTML = '<i style="font-size:24px" class="fa">&#xf00d;</i>'
+
+//         div3.append(pencil, cross);
+
+//         div2.append(title, price, div3)
+//         div1.append(img, div2)
+//         div.append(div1)
+
+        
+
+//         document.getElementById('cartQty').textContent = cartArray.length;
+
+//         //<--------------calculating the total cart value---------------->
+//         var total = 0;
+//         for(let t=0; t<cartArray.length ; t++){
+            
+//             total += t.price
+//         }
+//         document.getElementById('totalAmt').textContent = total;
+//     }
+// }
+
+
+//<--------------function to remove popup---------------->
+// document.getElementById("crosS").onclick=()=>{
+//     document.getElementById('removePopup').style.display = 'none';
+
+// }
+
+// document.getElementById("coButton").onclick=()=>{
+//   window.location.href = "./checkOut.html";
+// }
+
+
+
+// //<--------------go to chechout page---------------->
+// document.getElementById("cartBtn").onclick=()=> {
+//     window.location.href = "./cart.html";
+// }
+
+
+
+

@@ -1,21 +1,29 @@
 {
-  "name": "new",
+  "name": "sparehub_clone",
   "version": "1.0.0",
-  "description": "\"bcryptjs\": \"^2.4.3\",\r     \"cors\": \"^2.8.5\",\r     \"dotenv\": \"^16.0.0\",\r     \"express\": \"^4.17.3\",\r     \"jsonwebtoken\": \"^8.5.1\",\r     \"mongoose\": \"^6.2.4\",\r     \"nodemailer\": \"^6.7.2\"\r   }",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js"
-    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tej-p/SpareHub_clone.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tej-p/SpareHub_clone/issues"
+  },
+  "homepage": "https://github.com/tej-p/SpareHub_clone#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "heroku": "^7.60.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.9",
     "nodemailer": "^6.7.3"

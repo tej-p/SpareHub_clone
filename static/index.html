@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="index.css"/>
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,7 +35,7 @@
       <div id="header2">
         <div id="header21">
           <div style="margin-top: 25px">
-            <a class="navbar-brand" href="./homepage.html"
+            <a class="navbar-brand" href="./index.html"
               ><img src="./images/logo.png.webp" alt=""
             /></a>
           </div>
@@ -72,7 +73,7 @@
  
         <!---------------------CART ICON------------>
   
-        <div id="cartBack" onclick="myFunction()">
+        <div id="cartBack" onclick="goCart()">
           <div class = "cartIcon" >
             <i class="bi bi-cart-fill"></i>
             
@@ -104,7 +105,7 @@
           </button>
           <div class="dropdown-content">
             <div>
-              <img src="../images/car.jpg" alt="" />
+              <img src="./images/car.jpg" alt="" />
               <div style="margin-top: 30px">
                 <p style="color: white; font-size: 16px; font-weight: bold">
                   Car Brands
@@ -162,7 +163,7 @@
           </button>
           <div class="dropdown-content">
             <div>
-              <img src="../images/spare1.png.webp" alt="" />
+              <img src="./images/spare1.png.webp" alt="" />
               <div style="margin-top: 30px">
                 <p style="color: white; font-size: 16px; font-weight: bold">
                   Car Brands
@@ -271,13 +272,13 @@
       <!----------------- below Navbar -------------------------------------------->
   
       <div id="warranty">
-        <img src="../images/LARGEST.webp" alt="" />
+        <img src="./images/LARGEST.webp" alt="" />
         <p>LARGEST COLLECTION</p>
-        <img src="../images/HIGH.webp" alt="" />
+        <img src="./images/HIGH.webp" alt="" />
         <p>HIGH QUALITY PARTS WITH WARRANTY</p>
-        <img src="../images/SSL.webp" alt="" />
+        <img src="./images/SSL.webp" alt="" />
         <p>SSL CERTIFIED TRANSACTION</p>
-        <img src="../images/ONtime.webp" alt="" />
+        <img src="./images/ONtime.webp" alt="" />
         <p>ON-TIME DELIVERY</p>
       </div>
 
@@ -549,22 +550,6 @@
   </body>
 </html>
 
-<!-- <script type="module">
-  import header from "./header";
-  let cont = document.getElementById("cont");
-  cont.innerHTML = header();
-
-
-  import footer from "./footer";
-  document.getElementById("footer").innerHTML = footer();
-
-
-  import footer2 from "./footer2";
-  document.getElementById("footer2").innerHTML = footer2();
-
-
-</script> -->
-
 <script>
 
 // <!----------------- search bar -------------------------------------------->
@@ -750,6 +735,7 @@ function single(elem){
 // id="cartIcon"
 
 var cartArray = JSON.parse(localStorage.getItem("cartArray")) || [];
+document.getElementById("cartIcon").textContent = cartArray.length;
 
 function addCart(product) {
 
@@ -757,6 +743,10 @@ function addCart(product) {
     // console.log(cartArray);
     document.getElementById("cartIcon").textContent = cartArray.length;
     localStorage.setItem("cartArray",JSON.stringify(cartArray));
+}
+
+const goCart = () => {
+  window.location.href = "./cart.html"
 }
   
 

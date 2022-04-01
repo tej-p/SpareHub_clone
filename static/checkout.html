@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Checkout Page</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./checkout.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -35,7 +35,7 @@
       <div id="header21">
         <div style="margin-top: 25px">
           <a class="navbar-brand" href="./index.html"
-            ><img src="./images/logo.png.webp" alt="" width="100%"
+            ><img src="./images/logo.png.webp" alt=""
           /></a>
         </div>
 
@@ -281,37 +281,55 @@
       <p>ON-TIME DELIVERY</p>
     </div>
 
-   <!---------------------------------------------------    Create Account ------------------------------------------------------->
+    <!---------------------------------------------------  checkpot address  ------------------------------------------------------->
 
-
-    <p class="custLogin">Create New Customer Account</p>
+    <p class="custLogin">Shipping Address</p>
     <div class="box">
-      
-        <form id="regForm" style="display: flex;" onsubmit="Register(event)">
-          <div>
-            <p class="custLogin" style="color: #2399d6; margin:0px; margin-bottom: 20px; font-size: 16px;">PERSONAL INFORMATION</p>
-            <p>First Name <span style="color: rgb(235, 63, 11)">*</span></p>
-            <input type="text" class="inp" id="firstName" required/>
-            <br />
-            <p>Username <span style="color: rgb(235, 63, 11)">*</span></p>
-            <input type="text" class="inp" id="lastName" autocomplete="off" required />
-            <input id="submit" class="btnsub"  type="submit"></input>
-          </div>
-          <div style="margin-left:400px">
-            <p class="custLogin" style="color: #2399d6; margin:0px; margin-bottom: 20px; font-size: 16px;">SIGN-IN INFORMATION</p>
-            <p>Email <span style="color: rgb(235, 63, 11)">*</span></p>
-            <input type="text" class="inp" id="email" autocomplete="off" required/>
-            <br />
-            <p>Password <span style="color: rgb(235, 63, 11)">*</span></p>
-            <input type="text" class="inp" id="password" autocomplete="off" required/>
-            <br/>
-            <p>Mobile Number <span style="color: rgb(235, 63, 11)">*</span></p>
-            <input type="Number" class="inp" id="passwordConfirm" autocomplete="off" required/>
-          </div>
+      <div id="form">
 
-          
-        </form>
+        <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+          Name: <input type="text" name="fname">
+          <input type="submit" value="Submit">
+        </form> -->
 
+        <div>
+          <form id="loginForm" >
+            <p> First Name<span style="color: rgb(235, 63, 11)">*</span></p>
+            <input type="text" class="inp" id="firstName" autocomplete="false" required value="" />
+            <br />
+            <p>Last Name</p>
+            <input type="text" class="inp" id="lastName" autocomplete="false" required value="" />
+            <br />
+            <p>Address<span style="color: rgb(235, 63, 11)">*</span></p>
+            <input type="text" class="inp" id="add" required value="" />
+            <br />
+            <p>City<span style="color: rgb(235, 63, 11)">*</span></p>
+            <input type="text" class="inp" id="city" required value="" />
+            <br />
+            <p>Postal Code<span style="color: rgb(235, 63, 11)">*</span></p>
+            <input type="number" class="inp" id="post" required value="" />
+            <br />
+            <p style="color: rgb(235, 63, 11); font-size: 13px">
+              * Required Fields
+            </p>
+            <input type="submit" id="submit">
+          </form>
+          <button id="makePayment">Next</button>
+        </div>
+
+        <!-- </form> -->
+      </div>
+      <div id="newCust">
+        <p class="custLogin" style="color: #9c9a9a; margin: 0">Order Summary</p>
+        <p style="font-size: 14px; margin-top: 20px; border-bottom: 1px solid gray;">
+          <span>1</span> Item in Cart
+        </p>
+        <div style="display: flex;">
+          <img id="sumImg" src="" alt="">
+          <p id='sumTitle'></p>
+          <p id='sumPrice'></p>
+        </div>
+      </div>
       
     </div>
     <div id="footer"></div>
@@ -325,50 +343,6 @@
   </body>
 </html>
 
-<!-- <script type="module">
-  import header from "../components/header.js";
-  let cont = document.getElementById("cont");
-  cont.innerHTML = header();
-
-  import footer from "../components/footer.js";
-  document.getElementById("footer").innerHTML = footer();
-
-  import footer2 from "../components/footer2.js";
-  document.getElementById("footer2").innerHTML = footer2();
-</script> -->
-
-<!-- <script>
-   async function Register(event){
-        event.preventDefault();
-        var register_data = {
-            firstName : document.getElementById("firstName").value,
-            lastName : document.getElementById("lastName").value,
-            email : document.getElementById("email").value,
-            password : document.getElementById("password").value,
-            // passwordconfirm : document.getElementById("passwordconfirm").value,
-            
-        }
-
-        console.log(register_data)
-        const result = await fetch("/register", {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(register_data),
-          }).then((res) => res.json());
-
-          if (result.status == "error") {
-            alert(result.error);
-          } else {
-            alert("Success")
-            window.location.href = "./signIn.html.html";
-          }
-    }
-</script> -->
 
 
-
-
-<script src="./register.js"></script>
-
+<script src="./checkout.js"></script>
