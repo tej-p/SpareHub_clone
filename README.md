@@ -21,7 +21,7 @@
 
 ###################### Deployment link ##################################### 
 
-
+[deplyment link](https://spareshub.herokuapp.com/) (frontend and backend)
 
 ###################### Contributor #########################################
 
