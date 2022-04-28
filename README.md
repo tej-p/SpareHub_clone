@@ -4,14 +4,14 @@
 
 # Welcome :wave:
 
-###################### About Gap ##########################################
+###################### **About Gap** ##########################################
 
 >SparesHub.com is an online store for buying car spare parts from different reputed brands like Bosch, Monroe, LUK, INA, Talbros, Lumax, Delphi, Valeo, Minda etc.online, easily and fast in India. It's India's leading B2B automobile parts company. It provides automobile parts to car service centres, fleet owners, and other companies. They sell car spare parts primarily to Indian customers.
 
 
 
 
-###################### Presentation #######################################
+###################### **Presentation** #######################################
 [github link](https://github.com/tej-p/SpareHub_clone)
 
 [Demo Project](https://drive.google.com/drive/folders/1fZBip0APnw2ZOH3_7K-ZkenWtG9JrLP8?usp=sharing)
@@ -19,15 +19,15 @@
 [Blog Link](https://medium.com/@shreeramwar1995/spareshub-com-clone-fa330266fd10?postPublishedType=initial)
 
 
-###################### Deployment link ##################################### 
+###################### **Deployment link** ##################################### 
 
 [deplyment link](https://spareshub.herokuapp.com/) (frontend and backend)
 
-###################### Contributor #########################################
+###################### **Contributor** #########################################
 
 >Its a *SOLO* project, open to public on github.com. Do recommend changes!
 
-###################### Tech Stack Used #####################################
+###################### **Tech Stack Used** #####################################
 # HTML
 # CSS
 # Javascript
@@ -37,7 +37,7 @@
 # Bootstrap
 
 
-###################### Pages & Features  ###################################
+###################### **Pages & Features**  ###################################
 
 - `Landing Page`: Navbars, categories, products to add directly to cart and footer section.
 - `Create New Customer Page`: User details stored to Database.
@@ -50,7 +50,7 @@
 -Worked mainly on the frontend! 
 
 
-######################## How To Use ✅  ###################################
+######################## **How To Use ✅**  ###################################
 
 
 - At First user has to click on 'Create an  Account' on landing page. User have to create a new account if does not have an account. In signup page user has to  fill  all the fields in the form.
@@ -62,4 +62,4 @@
 - On payment page, user has to choose the payment option to confirm the order.
 
 
-######################## Thank You! ###################################
+######################## **Thank You!** ###################################
